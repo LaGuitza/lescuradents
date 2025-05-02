@@ -145,6 +145,10 @@ figcaption {
     background: #ddd;
 }
 
+.clip-polygon {
+    clip-path: polygon(0 0, 6% 0, 6% 80%, 28% 80%, 28% 75%, 9% 75%, 9% 0, 44% 0, 36% 14%, 40% 19%, 48% 0, 70% 0, 100% 0, 100% 15%, 87% 15%, 87% 24%, 100% 24%, 100% 29%, 87% 29%, 87% 36%, 100% 36%, 100% 43%, 100% 9%, 82% 9%, 82% 42%, 100% 42%, 100% 100%, 0 100%);
+    }
+
 @media (min-width: 768px) {
 
     .butons{
@@ -397,17 +401,23 @@ index.html
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-image: url(../img/Foto1.jpg);
+    background-image: url(../img/Foto2.jpeg);
     background-size: cover;
     background-position: center;
     color: var(--accent-color);
     text-align: center;
 }
 .hero-image h1 {
-    color: var(--main-color);
-    font-size: 2rem;
+    color: var(--light-color);
+    font-size: 2.5rem;
+    transition: font-size 0.5s ease-out;
     margin-top: 0;
-}
+    }
+.hero-image h1:hover{
+    font-size: 2rem;
+    transition-duration: 1s;
+    }
+
 main.home section {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -455,7 +465,14 @@ section.portada .totes_link a:hover{
 .last-posts article {
     margin-bottom: 2rem;
     background-color: var(--accent-color1);
-}
+    transition: background-color 0.5s ease-out;
+    }
+    
+    
+.last-posts article:hover {
+    background-color:#E4DEFF;
+    transition-duration: 1s;
+    }
 
 .last-posts .article-content {
     padding: 1rem;
@@ -476,8 +493,39 @@ section.portada .totes_link a:hover{
 }
 
 
-
-
+#popsicle .oliva{
+    animation: dropOliva 3s ease-in-out;
+    animation-iteration-count: infinite;
+    
+  }
+#popsicle .palillo{
+    animation: dropPalillo 3s ease-in-out; 
+    animation-iteration-count: infinite;
+    
+  }
+  
+  
+  @keyframes dropOliva {
+    0% {transform: translate(0px, -150px);}
+    17% {transform: translate(0px, 4px);}
+    27% {transform: translate(0px, -25px);}
+    38% {transform: translate(0px, 2px);}
+    42% {transform: translate(0px, -6px);}
+    50% {transform: translate(0px, 0px);}
+    100% {transform: translate(0px, 0px);}
+  }
+  
+  @keyframes dropPalillo {
+    0% {transform: translate(0px, -170px);}
+    65% {transform: translate(0px, -170px);}
+    75% {transform: translate(0px, 0px);}
+    100% {transform: translate(0px, 0px);}
+  }
+  
+  .site-container{
+    margin-top: 4rem;
+  }
+ 
 
 @media (min-width: 768px) {
 
@@ -519,10 +567,10 @@ section.portada .totes_link a:hover{
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-
+   /*
     .article-image {
         max-width: 500px;
-    }
+    }*/
 }
 
 /*************
@@ -694,6 +742,10 @@ img.detall_img2{
     }
 
     img.detall_img2{
+        margin-top: 2rem;
+    }
+
+    img.detall_img3{
         margin-top: 2rem;
     }
 
