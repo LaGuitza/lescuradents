@@ -754,6 +754,17 @@ img.detall_img2{
         margin-top: 1rem;
         padding: 1rem 2rem;
     }
+    .videoCentrat{
+        width: 750px;
+        height: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;   
+    }
+    .videoCentrat figcaption{
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
 
    
 }
