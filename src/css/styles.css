@@ -401,7 +401,7 @@ index.html
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-image: url(../img/Foto2.jpeg);
+    background-image: url(../img/Foto2Convertida.webp);
     background-size: cover;
     background-position: center;
     color: var(--accent-color);
