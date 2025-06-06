@@ -663,7 +663,7 @@ detall.html
 
 img.principal {
     width: 100%;
-    height: auto;
+    max-height: 30vh;
     object-fit: cover;
     object-position: 0% 50%; /* X then Y */
 }
